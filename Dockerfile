@@ -14,6 +14,7 @@ RUN git clone https://github.com/jacksonliam/mjpg-streamer.git /opt/mjpg-streame
  && cd /opt/mjpg-streamer/mjpg-streamer-experimental \
  && make \
  && make install
+RUN cp -r /opt/mjpg-streamer/mjpg-streamer-experimental/www /usr/local/www
 
 # Add sysconfig file for configuration
 COPY mjpg_streamer.sysconfig /etc/sysconfig/mjpg_streamer
