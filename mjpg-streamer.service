@@ -1,0 +1,13 @@
+[Unit]
+Description=mjpg-streamer
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/sysconfig/mjpg_streamer
+ExecStart=/usr/local/bin/mjpg_streamer $MJPG_INPUT $MJPG_OUTPUT
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+

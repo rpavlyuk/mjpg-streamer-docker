@@ -1,0 +1,2 @@
+MJPG_INPUT="-i \"/usr/local/lib/mjpg-streamer/input_uvc.so -n -r 1280x720 -f 24\""
+MJPG_OUTPUT="-o \"/usr/local/lib/mjpg-streamer/output_http.so -w /usr/local/www -p 8080 -l 0.0.0.0\""
