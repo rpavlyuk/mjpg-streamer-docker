@@ -1,0 +1,28 @@
+cap_add: []
+cap_drop: []
+cgroupns: private
+container: rpavlyuk/mjpeg-streamer
+created: 2025-05-18 17:23:55.011402
+device_requests: []
+devices:
+  - /dev/video0
+environment: {}
+group_add: []
+keep_alive: false
+links: {}
+mac_address: null
+name: mjpeg-streamer
+network_mode: bridge
+ports:
+  8080/tcp: 8080
+privileged: true
+remove: false
+restart_policy: {}
+security_opt: []
+tmpfs: {}
+tty: false
+volumes:
+  /etc/sysconfig/mjpg_streamer:
+    bind: /etc/sysconfig/mjpg_streamer
+    mode: rw
+working_dir: /root
